@@ -40,7 +40,7 @@ public class FirstCardForm extends Form {
     }
 
     public void otherSelect() {
-        otherSelectCB.state().waitForDisplayed();
+        otherSelectCB.state().waitForClickable();
         otherSelectCB.click();
     }
 
