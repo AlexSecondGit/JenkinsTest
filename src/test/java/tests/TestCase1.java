@@ -43,7 +43,7 @@ public class TestCase1 extends BaseTest {
         firstCard.clearEmailFieldAndType(WorkWithParams.chooseTestParamsForLogin(isParamTest));
         firstCard.clearDomainAndTYpe(environment.getValue("/testDomain").toString());
         try {
-            Thread.sleep(5000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
