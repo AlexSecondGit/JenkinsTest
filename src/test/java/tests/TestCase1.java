@@ -35,28 +35,28 @@ public class TestCase1 extends BaseTest {
         browser.waitForPageToLoad();
         WelcomePageForm wpf = new WelcomePageForm();
         Assert.assertTrue(wpf.state().waitForDisplayed(), "Page did not open");
-        wpf.goGameLink();
-        browser.waitForPageToLoad();
-        FirstCardForm firstCard = new FirstCardForm();
-        Assert.assertTrue(firstCard.state().waitForDisplayed(), "Card did not open");
-        firstCard.clearPasswordFieldAndType(WorkWithParams.chooseTestParamsForPass(isParamTest));
-        firstCard.clearEmailFieldAndType(WorkWithParams.chooseTestParamsForLogin(isParamTest));
-        firstCard.clearDomainAndTYpe(environment.getValue("/testDomain").toString());
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        firstCard.otherSelect();
-        firstCard.otherValueSelect(Domains.COM.toString());
-        firstCard.useLicenseCheckBox();
-        firstCard.goNextCard();
-        browser.waitForPageToLoad();
-        SecondCard secondCard = new SecondCard();
-        Assert.assertTrue(secondCard.state().waitForDisplayed(), "Card did not open");
-        secondCard.resetAllCB();
-        secondCard.selectCB(3);
+//        wpf.goGameLink();
+//        browser.waitForPageToLoad();
+//        FirstCardForm firstCard = new FirstCardForm();
+//        Assert.assertTrue(firstCard.state().waitForDisplayed(), "Card did not open");
+//        firstCard.clearPasswordFieldAndType(WorkWithParams.chooseTestParamsForPass(isParamTest));
+//        firstCard.clearEmailFieldAndType(WorkWithParams.chooseTestParamsForLogin(isParamTest));
+//        firstCard.clearDomainAndTYpe(environment.getValue("/testDomain").toString());
+//        try {
+//            Thread.sleep(2000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+//        firstCard.otherSelect();
+//        firstCard.otherValueSelect(Domains.COM.toString());
+//        firstCard.useLicenseCheckBox();
+//        firstCard.goNextCard();
+//        browser.waitForPageToLoad();
+//        SecondCard secondCard = new SecondCard();
+//        Assert.assertTrue(secondCard.state().waitForDisplayed(), "Card did not open");
+//        secondCard.resetAllCB();
+//        secondCard.selectCB(3);
     }
 
 
