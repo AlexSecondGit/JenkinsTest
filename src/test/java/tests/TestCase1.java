@@ -42,6 +42,11 @@ public class TestCase1 extends BaseTest {
         firstCard.clearPasswordFieldAndType(WorkWithParams.chooseTestParamsForPass(isParamTest));
         firstCard.clearEmailFieldAndType(WorkWithParams.chooseTestParamsForLogin(isParamTest));
         firstCard.clearDomainAndTYpe(environment.getValue("/testDomain").toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         firstCard.otherSelect();
 //        firstCard.otherValueSelect(Domains.COM.toString());
 //        firstCard.useLicenseCheckBox();
