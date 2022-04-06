@@ -9,7 +9,7 @@ public class FirstCardForm extends Form {
     private final ITextBox passwordInput = getElementFactory().getTextBox(By.xpath("//input[@placeholder='Choose Password']"), "password input");
     private final ITextBox emailInput = getElementFactory().getTextBox(By.xpath("//input[@placeholder='Your email']"), "email input");
     private final ITextBox domainInput = getElementFactory().getTextBox(By.xpath("//input[@placeholder='Domain']"), "domain input");
-    private final IComboBox otherSelectCB = getElementFactory().getComboBox(By.xpath("//div[@class='dropdown__field']"), "other select CB");
+    private final IComboBox otherSelectCB = getElementFactory().getComboBox(By.xpath("//span[@class='icon icon-chevron-down']"), "other select CB");
     private final ICheckBox licenseCB = getElementFactory().getCheckBox(By.xpath("//span[@class='icon icon-check checkbox__check']"), "acceptLicence");
     private final ILink goNextCard = getElementFactory().getLink(By.xpath("//a[@class='button--secondary']"), "go next card");
     private static final String domain = "//div[@class='dropdown__list-item' and contains(text(), '%s')]";
