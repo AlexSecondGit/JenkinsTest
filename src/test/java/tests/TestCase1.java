@@ -51,12 +51,7 @@ public class TestCase1 extends BaseTest {
         Assert.assertTrue(secondCard.state().waitForDisplayed(), "Card did not open");
         secondCard.resetAllCB();
         secondCard.selectCB(3);
-        secondCard.clickUpload();
-        WorkWithUpload.uploadFile(environment.getValue("/uploadFileName").toString());
-        secondCard.goNextCard();
-        browser.waitForPageToLoad();
-        ThirdCardForm thirdCard = new ThirdCardForm();
-        Assert.assertTrue(thirdCard.state().waitForDisplayed(), "Card did not open");
+
     }
 
 
