@@ -42,6 +42,11 @@ public class TestCase1 extends BaseTest {
         firstCard.clearPasswordFieldAndType(WorkWithParams.chooseTestParamsForPass(isParamTest));
         firstCard.clearEmailFieldAndType(WorkWithParams.chooseTestParamsForLogin(isParamTest));
         firstCard.clearDomainAndTYpe(environment.getValue("/testDomain").toString());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         firstCard.otherSelect();
         firstCard.otherValueSelect(Domains.COM.toString());
         firstCard.useLicenseCheckBox();
@@ -51,7 +56,6 @@ public class TestCase1 extends BaseTest {
         Assert.assertTrue(secondCard.state().waitForDisplayed(), "Card did not open");
         secondCard.resetAllCB();
         secondCard.selectCB(3);
-
     }
 
 
