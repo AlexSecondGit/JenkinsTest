@@ -47,6 +47,7 @@ public class TestCase1 extends BaseTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         firstCard.otherSelect();
         firstCard.otherValueSelect(Domains.COM.toString());
         firstCard.useLicenseCheckBox();
