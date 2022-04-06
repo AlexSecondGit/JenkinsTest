@@ -42,8 +42,11 @@ public class FirstCardForm extends Form {
     }
 
     public void otherSelect() {
-        System.out.println("________+++++++++++++++______________+++++++++++++++_____________++++++++");
-        System.out.println(otherSelectCB.state().isClickable());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         otherSelectCB.click();
     }
 
