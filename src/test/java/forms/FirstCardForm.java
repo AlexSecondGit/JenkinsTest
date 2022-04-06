@@ -42,7 +42,15 @@ public class FirstCardForm extends Form {
     }
 
     public void otherSelect() {
-        otherSelectCB.state().waitForClickable(Duration.ofSeconds(5));
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println(otherSelectCB.state().isDisplayed());
+        try {
+            otherSelectCB.state().wait(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(otherSelectCB.state().isDisplayed());
+
         otherSelectCB.click();
     }
 
