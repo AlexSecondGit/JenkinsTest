@@ -4,6 +4,8 @@ import aquality.selenium.elements.interfaces.*;
 import aquality.selenium.forms.Form;
 import org.openqa.selenium.By;
 
+import java.time.Duration;
+
 public class FirstCardForm extends Form {
 
     private final ITextBox passwordInput = getElementFactory().getTextBox(By.xpath("//input[@placeholder='Choose Password']"), "password input");
@@ -40,6 +42,7 @@ public class FirstCardForm extends Form {
     }
 
     public void otherSelect() {
+        otherSelectCB.state().waitForClickable(Duration.ofSeconds(5));
         otherSelectCB.click();
     }
 
