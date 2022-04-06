@@ -42,11 +42,6 @@ public class FirstCardForm extends Form {
     }
 
     public void otherSelect() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         otherSelectCB.click();
     }
 
