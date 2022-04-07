@@ -43,7 +43,10 @@ public class TestCase1 extends BaseTest {
         System.out.println("add modalBox+++++++++++++++++++++++++++++++++++++++++++++");
         if (mbf.state().isExist()){
             mbf.closeModalBox();
+            System.out.println("boxIsExist");
         }
+        System.out.println("add modalBox+++++++++++++++++++++++++++++++++++++++++++++");
+
         firstCard.otherSelect();
 //        firstCard.otherValueSelect(Domains.COM.toString());
 //        firstCard.useLicenseCheckBox();
