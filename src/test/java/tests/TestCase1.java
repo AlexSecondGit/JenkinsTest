@@ -39,13 +39,6 @@ public class TestCase1 extends BaseTest {
         firstCard.clearPasswordFieldAndType(WorkWithParams.chooseTestParamsForPass(isParamTest));
         firstCard.clearEmailFieldAndType(WorkWithParams.chooseTestParamsForLogin(isParamTest));
         firstCard.clearDomainAndTYpe(environment.getValue("/testDomain").toString());
-        ModalBoxForm mbf = new ModalBoxForm();
-        System.out.println("add modalBox+++++++++++++++++++++++++++++++++++++++++++++");
-        if (mbf.state().isExist()){
-            mbf.closeModalBox();
-            System.out.println("boxIsExist");
-        }
-        System.out.println("add modalBox+++++++++++++++++++++++++++++++++++++++++++++");
 
         firstCard.otherSelect();
 //        firstCard.otherValueSelect(Domains.COM.toString());
