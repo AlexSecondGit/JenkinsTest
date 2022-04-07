@@ -4,10 +4,7 @@ import aquality.selenium.browser.AqualityServices;
 import aquality.selenium.browser.Browser;
 import aquality.selenium.core.utilities.ISettingsFile;
 import aquality.selenium.core.utilities.JsonSettingsFile;
-import forms.FirstCardForm;
-import forms.SecondCard;
-import forms.ThirdCardForm;
-import forms.WelcomePageForm;
+import forms.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -42,10 +39,10 @@ public class TestCase1 extends BaseTest {
         firstCard.clearPasswordFieldAndType(WorkWithParams.chooseTestParamsForPass(isParamTest));
         firstCard.clearEmailFieldAndType(WorkWithParams.chooseTestParamsForLogin(isParamTest));
         firstCard.clearDomainAndTYpe(environment.getValue("/testDomain").toString());
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        ModalBoxForm mbf = new ModalBoxForm();
+        System.out.println("add modalBox+++++++++++++++++++++++++++++++++++++++++++++");
+        if (mbf.state().isExist()){
+            mbf.closeModalBox();
         }
         firstCard.otherSelect();
 //        firstCard.otherValueSelect(Domains.COM.toString());
