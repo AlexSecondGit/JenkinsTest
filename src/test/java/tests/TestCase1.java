@@ -40,7 +40,7 @@ public class TestCase1 extends BaseTest {
         firstCard.clearEmailFieldAndType(WorkWithParams.chooseTestParamsForLogin(isParamTest));
         firstCard.clearDomainAndTYpe(environment.getValue("/testDomain").toString());
 
-        firstCard.otherSelect();
+//        firstCard.otherSelect();
 //        firstCard.otherValueSelect(Domains.COM.toString());
 //        firstCard.useLicenseCheckBox();
 //        firstCard.goNextCard();
